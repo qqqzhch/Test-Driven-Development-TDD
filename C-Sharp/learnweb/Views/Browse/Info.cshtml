@@ -1,0 +1,134 @@
+﻿
+@using PetaPoco;
+@using learnDAL;
+@using DAL;
+@using learnweb.PageHelper;
+@using Netko.Common.Util.Seo;
+@model learnweb.Models.BrowseIndex
+
+@{
+    ViewBag.Title = Model._pagetitle + "-" + Model._subpagetitle;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div >
+
+    @if(Model.ajaxurl){
+   <h1>Retrieving original web address, ie jump, please wait O(∩_∩)O~</h1>
+   <a id="urladd" style="color:red; font-size:18px;"></a>
+    }
+
+ </div>
+<div class="container-fluid">
+
+    
+    <h4>   @Model.questionModel.tags  related problems</h4><br /><br />
+
+
+    
+
+        
+             
+        @foreach (var item in Model.tagslist){
+           
+                 <ul class="unstyled">
+    @foreach (var value in item.Value)
+    {
+        var QS = learnDAL.question.getquestionbyid(value.titlecode.Value);
+        
+        <li  class="row-fluid">
+            <div class="span1"style="word-break:break-all">
+      @{
+        var users = learnDAL.userinfo.getuserinfobyid(QS.siteid, QS.userid);
+          if (users != null)
+          {
+             <img src="@users.img"  width="32"  /><br />
+              @users.username
+          }
+         }
+           
+      </div>
+      <div class="span11" >
+     <h4 style=" margin: 0px 0;">
+          <a href="/Problem/index/@QS.titlecode/@SeoFriendlyStringSanitizer.Sanitize(QS.title)/"> @Html.Raw(QS.title) </a>
+
+     </h4> 
+      <br>  
+                  @Html.Partial("_smalltag", QS.tags)      
+                @QS.addtime  
+
+
+
+
+     <br> 
+       
+   @QS.content
+     
+   
+      </div>
+      </li>
+    }
+    </ul>
+             
+         
+        }
+        
+  
+         
+         
+
+
+
+    </div>
+
+@section js{
+    @if (Model.ajaxurl)
+    {
+  <script type="text/javascript">
+      $(document).ready(function () {
+          $.get("/browse/UrlInfo/@Model.questionModel.titlecode/ajax", function (data) {
+              if (data == "") {
+                  alert("Get the url address error");
+                  $("#urladd").text(data);
+                  $("#urladd").attr("href", data);
+              }
+              else {
+                  
+                  var a = confirm("Has successfully acquired the url address, click to jump to the original page");
+                  if (a == true) {
+                      window.location = data;
+                  }
+                  else {
+                      $("#urladd").text(data);
+                      $("#urladd").attr("href", data);
+                  }
+              }
+          });
+
+      });
+
+    </script>
+    }
+    else
+    {
+   @*<script type="text/javascript">
+       $(document).ready(function () {
+           $.get("/browse/UrlInfo/@Model.questionModel.titlecode/ajax", function (data) {
+              if (data == "") {
+                  alert("Get the url address error");
+                  $("#urladd").text(data);
+                  $("#urladd").attr("href", data);
+              }
+              else {
+                  $("#urladd").text(data);
+                  $("#urladd").attr("href", data);
+              }
+          });
+
+      });
+
+    </script>       
+ }*@
+
+}
+

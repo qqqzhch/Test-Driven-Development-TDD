@@ -1,0 +1,13 @@
+E:\work\learnweb.root\learnweb\learnwebTDD.Core\bin\Debug\learnwebTDD.Core.dll
+E:\work\learnweb.root\learnweb\learnwebTDD.Core\bin\Debug\learnwebTDD.Core.pdb
+E:\work\learnweb.root\learnweb\learnwebTDD.Core\bin\Debug\Castle.Core.dll
+E:\work\learnweb.root\learnweb\learnwebTDD.Core\bin\Debug\Castle.Windsor.dll
+E:\work\learnweb.root\learnweb\learnwebTDD.Core\bin\Debug\DataRepository.dll
+E:\work\learnweb.root\learnweb\learnwebTDD.Core\bin\Debug\DataRepository.pdb
+E:\work\learnweb.root\learnweb\learnwebTDD.Core\bin\Debug\Castle.Core.pdb
+E:\work\learnweb.root\learnweb\learnwebTDD.Core\bin\Debug\Castle.Core.xml
+E:\work\learnweb.root\learnweb\learnwebTDD.Core\bin\Debug\Castle.Windsor.pdb
+E:\work\learnweb.root\learnweb\learnwebTDD.Core\bin\Debug\Castle.Windsor.xml
+E:\work\learnweb.root\learnweb\learnwebTDD.Core\obj\Debug\learnwebTDD.Core.csprojResolveAssemblyReference.cache
+E:\work\learnweb.root\learnweb\learnwebTDD.Core\obj\Debug\learnwebTDD.Core.dll
+E:\work\learnweb.root\learnweb\learnwebTDD.Core\obj\Debug\learnwebTDD.Core.pdb

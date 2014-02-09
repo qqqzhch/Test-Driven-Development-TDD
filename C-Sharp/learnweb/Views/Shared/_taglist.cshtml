@@ -1,0 +1,13 @@
+﻿@using learnDAL;
+@using DAL;
+@using Netko.Common.Util.Seo;
+@using learnweb.Models;
+@model List<tag>
+<div>
+      <h6>TAG</h6>
+              <hr />
+              @foreach (var item in Model)
+              {
+              <a href="@commseting.sitebaseurl/home/tag/@this.Server.UrlEncode(item.title)/"><span class="label label-info" style=" margin-bottom:5px; font-size:17px;">@item.title</span></a>
+              }
+        </div>

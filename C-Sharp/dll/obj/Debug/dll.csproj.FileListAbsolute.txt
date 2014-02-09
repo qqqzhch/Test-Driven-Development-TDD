@@ -1,0 +1,4 @@
+E:\work\learnweb.root\learnweb\dll\bin\Debug\dll.dll
+E:\work\learnweb.root\learnweb\dll\bin\Debug\dll.pdb
+E:\work\learnweb.root\learnweb\dll\obj\Debug\dll.dll
+E:\work\learnweb.root\learnweb\dll\obj\Debug\dll.pdb

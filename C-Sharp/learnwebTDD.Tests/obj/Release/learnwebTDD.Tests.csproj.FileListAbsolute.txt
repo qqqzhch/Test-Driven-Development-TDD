@@ -1,0 +1,15 @@
+E:\work\learnweb.root\learnweb\learnwebTDD.Tests\obj\Release\learnwebTDD.Tests.csprojResolveAssemblyReference.cache
+E:\work\learnweb.root\learnweb\learnwebTDD.Tests\bin\Release\learnwebTDD.Tests.dll.config
+E:\work\learnweb.root\learnweb\learnwebTDD.Tests\bin\Release\learnwebTDD.Tests.dll
+E:\work\learnweb.root\learnweb\learnwebTDD.Tests\bin\Release\learnwebTDD.Tests.pdb
+E:\work\learnweb.root\learnweb\learnwebTDD.Tests\bin\Release\DataRepository.dll
+E:\work\learnweb.root\learnweb\learnwebTDD.Tests\bin\Release\learnwebTDD.Core.dll
+E:\work\learnweb.root\learnweb\learnwebTDD.Tests\bin\Release\learnwebTDD.dll
+E:\work\learnweb.root\learnweb\learnwebTDD.Tests\bin\Release\nunit.framework.dll
+E:\work\learnweb.root\learnweb\learnwebTDD.Tests\bin\Release\nunit.mocks.dll
+E:\work\learnweb.root\learnweb\learnwebTDD.Tests\bin\Release\DataRepository.pdb
+E:\work\learnweb.root\learnweb\learnwebTDD.Tests\bin\Release\learnwebTDD.Core.pdb
+E:\work\learnweb.root\learnweb\learnwebTDD.Tests\bin\Release\learnwebTDD.pdb
+E:\work\learnweb.root\learnweb\learnwebTDD.Tests\bin\Release\nunit.framework.xml
+E:\work\learnweb.root\learnweb\learnwebTDD.Tests\obj\Release\learnwebTDD.Tests.dll
+E:\work\learnweb.root\learnweb\learnwebTDD.Tests\obj\Release\learnwebTDD.Tests.pdb

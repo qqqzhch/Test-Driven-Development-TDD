@@ -1,0 +1,23 @@
+﻿@using learnDAL;
+@using DAL;
+@using Netko.Common.Util.Seo;
+@model List<userinfo>
+
+
+USER
+<hr />
+<ul class="thumbnails">
+
+@foreach (var item in Model)
+{
+  <li class="span3">
+    <div class="thumbnail">
+      
+       <a href="/Warrior/hero/@item.siteid/@item.usernamehashcode/@SeoFriendlyStringSanitizer.Sanitize(item.username)/">
+      <img src="@item.img" alt="@item.username"> 
+       </a>
+      
+    </div>
+  </li>
+}
+</ul>

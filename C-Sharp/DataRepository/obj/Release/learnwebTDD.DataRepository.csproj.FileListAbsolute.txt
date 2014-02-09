@@ -1,0 +1,4 @@
+E:\work\learnweb.root\learnweb\DataRepository\bin\Release\DataRepository.dll
+E:\work\learnweb.root\learnweb\DataRepository\bin\Release\DataRepository.pdb
+E:\work\learnweb.root\learnweb\DataRepository\obj\Release\DataRepository.dll
+E:\work\learnweb.root\learnweb\DataRepository\obj\Release\DataRepository.pdb

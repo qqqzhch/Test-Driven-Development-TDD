@@ -1,0 +1,8 @@
+E:\work\learnweb.root\learnweb\learnweb\bin\learnweb.dll
+E:\work\learnweb.root\learnweb\learnweb\bin\learnweb.pdb
+E:\work\learnweb.root\learnweb\learnweb\bin\DAL.dll
+E:\work\learnweb.root\learnweb\learnweb\bin\Netko.Common.Util.Seo.SeoFriendlyStringSanitizer.dll
+E:\work\learnweb.root\learnweb\learnweb\bin\DAL.pdb
+E:\work\learnweb.root\learnweb\learnweb\obj\Debug\learnweb.csprojResolveAssemblyReference.cache
+E:\work\learnweb.root\learnweb\learnweb\obj\Debug\learnweb.dll
+E:\work\learnweb.root\learnweb\learnweb\obj\Debug\learnweb.pdb

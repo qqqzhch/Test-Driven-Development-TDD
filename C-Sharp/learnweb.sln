@@ -1,0 +1,102 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "learnweb", "learnweb\learnweb.csproj", "{06F2852A-FF2C-404F-93BB-7D0469BE4B75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "learnweb.Tests", "learnweb.Tests\learnweb.Tests.csproj", "{E5C85317-7C5A-44D1-B30F-25DD5721276C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{9A1F52D9-0DA5-43FF-9FE7-524B6EE61D9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dll", "dll\dll.csproj", "{A16C3EF0-D1F8-40AF-A1F6-754DF0DCF70E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetaPoco", "F:\浏览器下载\PetaPoco-master\PetaPoco\PetaPoco.csproj", "{33699753-151D-4100-8F12-9AE1AEB5C5BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "learnwebTDD", "learnwebTDD\learnwebTDD.csproj", "{757C6A4C-0587-4433-BD71-4000E89F0419}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "learnwebTDD.Tests", "learnwebTDD.Tests\learnwebTDD.Tests.csproj", "{E76907CA-BEEF-4913-B2F9-EE5C995F7967}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "learnwebTDD.DataRepository", "DataRepository\learnwebTDD.DataRepository.csproj", "{85A84821-D99D-485C-A736-7C091C2E79F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "learnwebTDD.Core", "learnwebTDD.Core\learnwebTDD.Core.csproj", "{6CF2D400-6383-4F6D-A840-A4A38E66D5DA}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 10
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = DAL\\DAL.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = DAL\\
+		SccProjectUniqueName2 = dll\\dll.csproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = dll\\
+		SccProjectUniqueName3 = learnweb.Tests\\learnweb.Tests.csproj
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = learnweb.Tests\\
+		SccProjectUniqueName4 = learnweb\\learnweb.csproj
+		SccLocalPath4 = .
+		SccProjectFilePathRelativizedFromConnection4 = learnweb\\
+		SccProjectUniqueName5 = F:\\浏览器下载\\PetaPoco-master\\PetaPoco\\PetaPoco.csproj
+		SccProjectName5 = \u0022$/learnweb.root/PetaPoco\u0022,\u0020ZGBAAAAA
+		SccLocalPath5 = F:\\浏览器下载\\PetaPoco-master\\PetaPoco
+		SccProjectUniqueName6 = DataRepository\\learnwebTDD.DataRepository.csproj
+		SccLocalPath6 = .
+		SccProjectFilePathRelativizedFromConnection6 = DataRepository\\
+		SccProjectUniqueName7 = learnwebTDD.Core\\learnwebTDD.Core.csproj
+		SccLocalPath7 = .
+		SccProjectFilePathRelativizedFromConnection7 = learnwebTDD.Core\\
+		SccProjectUniqueName8 = learnwebTDD\\learnwebTDD.csproj
+		SccLocalPath8 = .
+		SccProjectFilePathRelativizedFromConnection8 = learnwebTDD\\
+		SccProjectUniqueName9 = learnwebTDD.Tests\\learnwebTDD.Tests.csproj
+		SccLocalPath9 = .
+		SccProjectFilePathRelativizedFromConnection9 = learnwebTDD.Tests\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06F2852A-FF2C-404F-93BB-7D0469BE4B75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06F2852A-FF2C-404F-93BB-7D0469BE4B75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06F2852A-FF2C-404F-93BB-7D0469BE4B75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06F2852A-FF2C-404F-93BB-7D0469BE4B75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5C85317-7C5A-44D1-B30F-25DD5721276C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5C85317-7C5A-44D1-B30F-25DD5721276C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5C85317-7C5A-44D1-B30F-25DD5721276C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5C85317-7C5A-44D1-B30F-25DD5721276C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A1F52D9-0DA5-43FF-9FE7-524B6EE61D9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A1F52D9-0DA5-43FF-9FE7-524B6EE61D9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A1F52D9-0DA5-43FF-9FE7-524B6EE61D9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A1F52D9-0DA5-43FF-9FE7-524B6EE61D9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A16C3EF0-D1F8-40AF-A1F6-754DF0DCF70E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A16C3EF0-D1F8-40AF-A1F6-754DF0DCF70E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A16C3EF0-D1F8-40AF-A1F6-754DF0DCF70E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A16C3EF0-D1F8-40AF-A1F6-754DF0DCF70E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33699753-151D-4100-8F12-9AE1AEB5C5BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33699753-151D-4100-8F12-9AE1AEB5C5BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33699753-151D-4100-8F12-9AE1AEB5C5BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33699753-151D-4100-8F12-9AE1AEB5C5BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{757C6A4C-0587-4433-BD71-4000E89F0419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{757C6A4C-0587-4433-BD71-4000E89F0419}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{757C6A4C-0587-4433-BD71-4000E89F0419}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{757C6A4C-0587-4433-BD71-4000E89F0419}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E76907CA-BEEF-4913-B2F9-EE5C995F7967}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E76907CA-BEEF-4913-B2F9-EE5C995F7967}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E76907CA-BEEF-4913-B2F9-EE5C995F7967}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E76907CA-BEEF-4913-B2F9-EE5C995F7967}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85A84821-D99D-485C-A736-7C091C2E79F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85A84821-D99D-485C-A736-7C091C2E79F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85A84821-D99D-485C-A736-7C091C2E79F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85A84821-D99D-485C-A736-7C091C2E79F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CF2D400-6383-4F6D-A840-A4A38E66D5DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CF2D400-6383-4F6D-A840-A4A38E66D5DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CF2D400-6383-4F6D-A840-A4A38E66D5DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CF2D400-6383-4F6D-A840-A4A38E66D5DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
+EndGlobal

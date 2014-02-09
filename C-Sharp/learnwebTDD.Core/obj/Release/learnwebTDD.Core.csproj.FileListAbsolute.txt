@@ -1,0 +1,4 @@
+E:\work\learnweb.root\learnweb\learnwebTDD.Core\bin\Release\learnwebTDD.Core.dll
+E:\work\learnweb.root\learnweb\learnwebTDD.Core\bin\Release\learnwebTDD.Core.pdb
+E:\work\learnweb.root\learnweb\learnwebTDD.Core\obj\Release\learnwebTDD.Core.dll
+E:\work\learnweb.root\learnweb\learnwebTDD.Core\obj\Release\learnwebTDD.Core.pdb

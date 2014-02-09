@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/DAL.dll">
+      <publishTime>11/02/2013 09:53:00</publishTime>
+    </File>
+    <File Include="bin/learnweb.dll">
+      <publishTime>11/02/2013 11:23:17</publishTime>
+    </File>
+    <File Include="bin/Netko.Common.Util.Seo.SeoFriendlyStringSanitizer.dll">
+      <publishTime>06/22/2013 10:05:26</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap-responsive.css">
+      <publishTime>10/01/2013 11:20:41</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap-responsive.min.css">
+      <publishTime>10/01/2013 11:20:41</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap.css">
+      <publishTime>10/01/2013 11:20:41</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap.min.css">
+      <publishTime>10/01/2013 11:20:41</publishTime>
+    </File>
+    <File Include="Content/css/Site.css">
+      <publishTime>10/01/2013 11:20:41</publishTime>
+    </File>
+    <File Include="Content/img/glyphicons-halflings-white.png">
+      <publishTime>10/01/2013 11:20:41</publishTime>
+    </File>
+    <File Include="Content/img/glyphicons-halflings.png">
+      <publishTime>10/01/2013 11:20:41</publishTime>
+    </File>
+    <File Include="Content/js/bootstrap.js">
+      <publishTime>10/01/2013 11:20:41</publishTime>
+    </File>
+    <File Include="Content/js/bootstrap.min.js">
+      <publishTime>10/01/2013 11:20:41</publishTime>
+    </File>
+    <File Include="Content/js/html5shiv.js">
+      <publishTime>10/01/2013 11:20:41</publishTime>
+    </File>
+    <File Include="Content/js/jquery.js">
+      <publishTime>10/01/2013 11:20:41</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>10/01/2013 11:20:41</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>10/01/2013 11:20:41</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.5.1-vsdoc.js">
+      <publishTime>10/01/2013 11:20:41</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.5.1.js">
+      <publishTime>10/01/2013 11:20:41</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.5.1.min.js">
+      <publishTime>10/01/2013 11:20:41</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.8.11.js">
+      <publishTime>10/01/2013 11:20:41</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.8.11.min.js">
+      <publishTime>10/01/2013 11:20:42</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.js">
+      <publishTime>10/01/2013 11:20:41</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.min.js">
+      <publishTime>10/01/2013 11:20:41</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate-vsdoc.js">
+      <publishTime>10/01/2013 11:20:41</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>10/01/2013 11:20:41</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>10/01/2013 11:20:42</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>10/01/2013 11:20:42</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>10/01/2013 11:20:42</publishTime>
+    </File>
+    <File Include="Scripts/MicrosoftAjax.debug.js">
+      <publishTime>10/01/2013 11:20:43</publishTime>
+    </File>
+    <File Include="Scripts/MicrosoftAjax.js">
+      <publishTime>10/01/2013 11:20:43</publishTime>
+    </File>
+    <File Include="Scripts/MicrosoftMvcAjax.debug.js">
+      <publishTime>10/01/2013 11:20:43</publishTime>
+    </File>
+    <File Include="Scripts/MicrosoftMvcAjax.js">
+      <publishTime>10/01/2013 11:20:43</publishTime>
+    </File>
+    <File Include="Scripts/MicrosoftMvcValidation.debug.js">
+      <publishTime>10/01/2013 11:20:43</publishTime>
+    </File>
+    <File Include="Scripts/MicrosoftMvcValidation.js">
+      <publishTime>10/01/2013 11:20:43</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-1.7.js">
+      <publishTime>10/01/2013 11:20:43</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-1.7.min.js">
+      <publishTime>10/01/2013 11:20:43</publishTime>
+    </File>
+    <File Include="Views/Account/ChangePassword.cshtml">
+      <publishTime>10/01/2013 11:20:43</publishTime>
+    </File>
+    <File Include="Views/Account/ChangePasswordSuccess.cshtml">
+      <publishTime>10/01/2013 11:20:43</publishTime>
+    </File>
+    <File Include="Views/Account/LogOn.cshtml">
+      <publishTime>10/01/2013 11:20:43</publishTime>
+    </File>
+    <File Include="Views/Account/Register.cshtml">
+      <publishTime>10/01/2013 11:20:43</publishTime>
+    </File>
+    <File Include="Views/Browse/Index.cshtml">
+      <publishTime>10/21/2013 21:53:16</publishTime>
+    </File>
+    <File Include="Views/Browse/Info.cshtml">
+      <publishTime>11/02/2013 11:01:35</publishTime>
+    </File>
+    <File Include="Views/Home/About.cshtml">
+      <publishTime>10/01/2013 11:20:43</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>11/02/2013 11:22:37</publishTime>
+    </File>
+    <File Include="Views/Home/tag.cshtml">
+      <publishTime>11/02/2013 11:00:13</publishTime>
+    </File>
+    <File Include="Views/Problem/Index.cshtml">
+      <publishTime>10/26/2013 15:49:45</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>10/01/2013 11:20:43</publishTime>
+    </File>
+    <File Include="Views/Shared/userlist.cshtml">
+      <publishTime>10/01/2013 11:20:43</publishTime>
+    </File>
+    <File Include="Views/Shared/_infovew.cshtml">
+      <publishTime>10/21/2013 22:43:35</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>11/02/2013 11:10:20</publishTime>
+    </File>
+    <File Include="Views/Shared/_LogOnPartial.cshtml">
+      <publishTime>10/01/2013 11:20:43</publishTime>
+    </File>
+    <File Include="Views/Shared/_PagerTemp.cshtml">
+      <publishTime>10/01/2013 11:20:43</publishTime>
+    </File>
+    <File Include="Views/Shared/_smalltag.cshtml">
+      <publishTime>10/01/2013 11:20:43</publishTime>
+    </File>
+    <File Include="Views/Shared/_taglist.cshtml">
+      <publishTime>10/01/2013 11:20:43</publishTime>
+    </File>
+    <File Include="Views/Tag/Index.cshtml">
+      <publishTime>10/20/2013 21:37:56</publishTime>
+    </File>
+    <File Include="Views/Warrior/discoverer.cshtml">
+      <publishTime>10/01/2013 11:20:43</publishTime>
+    </File>
+    <File Include="Views/Warrior/hero.cshtml">
+      <publishTime>10/01/2013 11:20:43</publishTime>
+    </File>
+    <File Include="Views/Warrior/Index.cshtml">
+      <publishTime>10/01/2013 11:20:43</publishTime>
+    </File>
+    <File Include="Views/Warrior/Pioneer.cshtml">
+      <publishTime>10/01/2013 11:20:43</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>10/01/2013 11:20:43</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>10/01/2013 11:20:43</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/02/2013 11:23:18</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,43 @@
+﻿
+@using learnDAL;
+@using DAL;
+@using learnweb.PageHelper;
+@using Netko.Common.Util.Seo;
+@model learnweb.Models.tagindex
+
+@{
+    ViewBag.Title = Model._pagetitle+"-"+Model._subpagetitle;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<form class="well form-search">
+  <input type="text" class="input-xlarge search-query"  placeholder="Type something…">
+  <button type="submit" class="btn">Search</button>
+</form>
+Web site is in building
+      <hr>
+
+      <!-- Example row of columns -->
+     <div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span10">
+    <h1>ProblemTag </h1>
+    <p> Using the right tags makes it easier for others to find and solve the problem</p>
+    @foreach (var item in Model.questionpage.Items)
+    {
+    <div class="span3"><h2><a href="/home/tag/@this.Server.UrlEncode(item.title)/">@item.title</a></h2> </div>
+    }
+ 
+      <div class="span12">
+      @Html.Pager("page1", (int)Model.questionpage.CurrentPage, (int)Model.questionpage.TotalItems, Model.pageurl, pageSize: (int)Model.questionpage.ItemsPerPage)
+      </div>
+    </div>
+    <div class="span2">
+      <!--Body content-->
+   @*   @Html.Partial("userlist",Model.userinfos)*@
+
+
+    </div>
+  </div>
+</div>

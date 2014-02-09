@@ -1,0 +1,84 @@
+﻿
+@using learnDAL;
+@using DAL;
+@using learnweb.PageHelper;
+@using Netko.Common.Util.Seo;
+@model learnweb.Models.homeindex
+           
+ @{
+    ViewBag.Title = Model._pagetitle+"-"+Model._subpagetitle;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<form class="well form-search">
+  <input type="text" class="input-xlarge search-query"  placeholder="Type something…">
+  <button type="submit" class="btn">Search</button>
+</form>
+Web site is in building
+      <hr>
+
+      <!-- Example row of columns -->
+     <div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span10">
+      <!--Sidebar content-->
+      <ul class="unstyled">
+      @foreach (var item in Model.questionpage.Items)
+      {
+      <li class="row-fluid" style="word-break:break-all">
+      <div class="span1" style=" float:left" >
+      @{
+          var users = learnDAL.userinfo.getuserinfobyid(item.siteid, item.userid);
+          if (users != null)
+          {
+             <img src="@users.img"  width="32"  /><br />
+              <a>@users.username</a>
+          }
+         }
+           
+      </div>
+      <div class="span11">
+     <h4  style=" margin: 0px 0;"><a href="/Problem/index/@item.titlecode/@SeoFriendlyStringSanitizer.Sanitize(item.title)/">@Html.Raw(item.title)</a> </h4> 
+      <br /> 
+      @Html.Partial("_smalltag", item.tags)
+
+
+     <br /> 
+       
+      @item.content;
+      
+    @*  @Html.Raw( item.content.Substring(0, item.content.Length / 4));*@
+     
+   
+      </div>
+      </li>
+      }
+   
+      </ul>
+      
+      <div class="span12">
+      @Html.Pager("page1", (int)Model.questionpage.CurrentPage, (int)Model.questionpage.TotalItems, Model.pageurl, pageSize: (int)Model.questionpage.ItemsPerPage)
+      </div>
+    </div>
+    <div class="span2">
+      <!--Body content-->
+@*      @Html.Partial("userlist",Model.userinfos)*@
+      @Html.Partial("_taglist",Model.tags)
+
+    </div>
+  </div>
+</div>
+
+@section foothtml{
+    <ul class="inline">
+        <li>Links:</li>
+        <li><a target="_blank" href="http://stackoverflow.com/">stackoverflow</a></li>
+        <li><a target="_blank" href="http://answers.yahoo.com/">answers.yahoo</a></li>
+        <li><a target="_blank" href="http://www.codeproject.com/">codeproject.com</a></li>
+        <li><a target="_blank" href="http://social.msdn.microsoft.com/Forums/en-US/home">social.msdn.microsoft.com</a></li>
+        <li><a href="http://dev.51urls.com/" target="_blank">51urls</a></li>
+        <li><a href="http://www.linuxdot.net" target="_blank">www.linuxdot.net</a></li>
+    </ul>
+  
+}

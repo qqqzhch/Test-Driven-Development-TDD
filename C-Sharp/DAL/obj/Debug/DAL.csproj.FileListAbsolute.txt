@@ -1,0 +1,5 @@
+E:\work\learnweb.root\learnweb\DAL\bin\Debug\DAL.dll
+E:\work\learnweb.root\learnweb\DAL\bin\Debug\DAL.pdb
+E:\work\learnweb.root\learnweb\DAL\obj\Debug\DAL.dll
+E:\work\learnweb.root\learnweb\DAL\obj\Debug\DAL.pdb
+E:\work\learnweb.root\learnweb\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache

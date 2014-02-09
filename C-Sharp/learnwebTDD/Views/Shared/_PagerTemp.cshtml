@@ -1,0 +1,48 @@
+﻿@{Layout = null;}
+@using learnwebTDD.Core.Plugging;
+@if (Model.PagerShow)
+{
+    <div id="@Model.PagerId" class="pagination">
+      <ul>
+ 
+        <li><a> @(Model.CurPage)/@(Model.TotalPage)</a> 
+
+        </li>
+        @if (null != Model.PageList && Model.PageList.Count > 1)
+        {
+            int startPage = Model.PageList[0].PageIndex;//开始页
+            int endPage = Model.PageList[Model.PageList.Count - 1].PageIndex;//结束页
+            if (Model.CurPage - 1 >= startPage)
+            {
+                <li>
+                 
+            <a href="@string.Format(Model.pagebaseurl,Model.CurPage - 1)">
+                Previous</a></li>
+            }
+            foreach (var item in Model.PageList)
+            {
+                if (item.PageIndex == Model.CurPage)
+                {
+                    <li class="active">
+            <a>@item.PageIndex.ToString()</a>
+            </li>
+                }
+                else
+                {
+                    <li>
+                    
+            <a href="@string.Format(Model.pagebaseurl, item.PageIndex)">@item.PageIndex.ToString()</a>
+            </li>
+                }
+            }
+            if (Model.CurPage + 1 <= endPage)
+            {
+                <li>
+            <a href="@string.Format(Model.pagebaseurl, Model.CurPage + 1)">
+                Next</a>
+                </li>
+            }
+        }
+ </ul>
+    </div> 
+}

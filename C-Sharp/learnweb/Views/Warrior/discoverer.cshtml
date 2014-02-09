@@ -1,0 +1,58 @@
+﻿
+
+@using learnDAL;
+@using DAL;
+@using learnweb.PageHelper;
+@using Netko.Common.Util.Seo;
+@model learnweb.Models.discovererpage
+
+@{
+    ViewBag.Title = Model._pagetitle + "-" + Model._subpagetitle;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form class="well form-search">
+  <input type="text" class="input-xlarge search-query"  placeholder="Type something…">
+  <button type="submit" class="btn">Search</button>
+</form>
+Web site is in building
+      <hr>
+
+      <!-- Example row of columns -->
+     <div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span10">
+      <!--Sidebar content-->
+      <ul class="unstyled">
+      @foreach (var item in Model.questionpage.Items)
+      {
+      <li>
+      <div class="span2" >
+      @{
+          var users = learnDAL.userinfo.getuserinfobyid(item.siteid, item.userid);
+          if (users != null)
+          {
+             <a href="/Warrior/hero/@users.siteid/@users.usernamehashcode/@SeoFriendlyStringSanitizer.Sanitize(users.username)/"><img src="@users.img" /></a><br />
+              <a href="/Warrior/hero/@users.siteid/@users.usernamehashcode/@SeoFriendlyStringSanitizer.Sanitize(users.username)/">@users.username</a>
+          }
+         }
+           
+      </div>
+      
+      </li>
+      }
+   
+      </ul>
+      
+      <div class="span12">
+      @Html.Pager("page1", (int)Model.questionpage.CurrentPage, (int)Model.questionpage.TotalItems, Model.pageurl, pageSize: (int)Model.questionpage.ItemsPerPage)
+      </div>
+    </div>
+    <div class="span2">
+      <!--Body content-->
+
+      @Html.Partial("_taglist",Model.tags)
+
+    </div>
+  </div>
+</div>

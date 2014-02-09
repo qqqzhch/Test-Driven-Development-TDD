@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "tag";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using DataRepository;
+@using learnwebTDD.Core.Plugging;
+@using Netko.Common.Util.Seo;
+@model learnwebTDD.Core.Models.browseInfo
+           
+ @{
+    ViewBag.Title = Model._pagetitle+"-"+Model._subpagetitle;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+     <!-- Example row of columns -->
+     <div class="container-fluid">
+  <div class="row-fluid">
+            <div class="span10">
+                <div class="span12"><h1>@Model.questionNow.tags  Related issues</h1></div>
+                <ul class="unstyled">
+              @foreach(var item in Model.questionpage){
+              <li class="row-fluid" style="word-break:break-all">
+                  <div class="span1" style=" float:left" >
+                      <img alt="@item.userinfo.username" src="@item.userinfo.img"  width="32"  /><br />
+              <a>@item.userinfo.username</a>
+                   </div>
+                  <div class="span11">
+                      <h4  style=" margin: 0px 0;"><a href="/Problem/index/@item.question.titlecode/@SeoFriendlyStringSanitizer.Sanitize(item.question.title)/">@Html.Raw(item.question.title)</a> </h4> 
+   <br /> 
+      @Html.Partial("_smalltag", item.question.tags)
+                      <br />
+                      @item.question.content
+                      </div>
+
+              </li>
+              }
+              </ul>
+              </div>
+         <div class="span2">
+             Web site is in building
+             </div>
+
+      </div>
+         </div>

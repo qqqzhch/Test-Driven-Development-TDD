@@ -1,0 +1,94 @@
+﻿
+@using PetaPoco;
+@using learnDAL;
+@using DAL;
+@using learnweb.PageHelper;
+@using Netko.Common.Util.Seo;
+@model learnweb.Models.problemindex
+
+@{
+    ViewBag.Title = Model._pagetitle + "-"+Model._subpagetitle;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+   <div class="container-fluid">
+  <div class="row-fluid">
+
+  <div class="span10">
+  <ul class="breadcrumb">
+  <li>
+    <a href="/">Home</a> <span class="divider">/</span>
+  </li>
+  @{var tagone="default";}
+   @{
+         string[] objlist = Model.questionone.tags.Split(',');
+          foreach (var tag in objlist)
+          {
+              if (tagone == "default")
+              {
+                  tagone = @tag;
+                  
+              }
+      
+          }
+          }
+  <li>
+    <a href="/home/tag/@this.Server.UrlEncode(tagone)/">@tagone</a> <span class="divider">/</span>
+  </li>
+  <li class="active">@Html.Raw(Model.questionone.title)</li>
+</ul>
+<h2>@Html.Raw(Model.questionone.title)</h2>
+    @Html.Partial("_smalltag", Model.questionone.tags)
+          
+      
+      <a  style="float:right" class="btn btn-lg btn-primary btn-shadow bs3-link" href="/browse/info/@Model.questionone.titlecode/@SeoFriendlyStringSanitizer.Sanitize(Model.questionone.tags)" target="_blank" role="button">View the original question URL</a>
+      <br />
+     discoverer:  @Model.userinfoone.username
+      <img src="@Model.userinfoone.img" style="width:40px; height:40px;" />
+      
+        <div>
+        <div>
+@Html.Raw(Model.questionone.content)
+</div>
+<hr />
+<ol>
+@foreach (var item in Model.answerlist)
+{
+    <li>
+          @{
+          var users = learnDAL.userinfo.getuserinfobyid((int)item.siteid, (long)item.userid);
+          if (users != null)
+          {
+        <div class="btn-group">
+          <a class="btn btn-primary" href="#"><i class="icon-user icon-white"></i> Pioneer</a>
+          <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/Warrior/hero/@users.siteid/@users.usernamehashcode/@SeoFriendlyStringSanitizer.Sanitize(users.username)/"><i class="icon-user"></i>@users.username </a></li>
+            <li><a href="/Warrior/hero/@users.siteid/@users.usernamehashcode/@SeoFriendlyStringSanitizer.Sanitize(users.username)/"><i class="icon-star"></i><img src="@users.img" /> </a></li>
+            
+            <li class="divider"></li>
+            <li><a href=""><i class="i"></i> Participate in solving the problems of people is admirable</a></li>
+          </ul>
+        </div>
+          }
+         }    
+    
+<div>@Html.Raw(item.content)</div>
+     </li>
+}
+</ol>
+</div>
+  </div>
+  <div class="span2">
+  <div>Source of the problem： @Model.siteone.sitename</div>
+  Web site is in building
+      @{
+          string urlfanyi = HttpUtility.UrlEncode(this.Request.Url.ToString(), System.Text.Encoding.UTF8);
+      }
+            <a  style="float:right" class="btn btn-lg btn-primary btn-shadow bs3-link" href="http://translate.google.com.hk/translate?hl=zh-CN&sl=en&tl=fr&u=@urlfanyi" target="_blank" role="button">Translate this page with Google</a>
+  </div>
+  </div>
+  
+
+  </div>
+

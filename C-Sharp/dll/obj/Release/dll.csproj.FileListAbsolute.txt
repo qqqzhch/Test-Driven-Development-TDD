@@ -1,0 +1,5 @@
+E:\work\learnweb.root\learnweb\dll\bin\Release\dll.dll
+E:\work\learnweb.root\learnweb\dll\bin\Release\dll.pdb
+E:\work\learnweb.root\learnweb\dll\obj\Release\dll.dll
+E:\work\learnweb.root\learnweb\dll\obj\Release\dll.pdb
+E:\work\learnweb.root\learnweb\dll\obj\Release\dll.csprojResolveAssemblyReference.cache

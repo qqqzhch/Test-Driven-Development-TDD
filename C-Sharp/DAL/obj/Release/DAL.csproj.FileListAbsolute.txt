@@ -1,0 +1,4 @@
+E:\work\learnweb.root\learnweb\DAL\bin\Release\DAL.dll
+E:\work\learnweb.root\learnweb\DAL\bin\Release\DAL.pdb
+E:\work\learnweb.root\learnweb\DAL\obj\Release\DAL.dll
+E:\work\learnweb.root\learnweb\DAL\obj\Release\DAL.pdb

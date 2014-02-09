@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1065]E:\work\learnweb.root\learnweb\learnwebTDD.Tests\bin\Debug\learnwebTDD.Tests.dll</TopNode>
+  <SelectedNode>[0-1066]learnwebTDD</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1065]E:\work\learnweb.root\learnweb\learnwebTDD.Tests\bin\Debug\learnwebTDD.Tests.dll" Expanded="true" />
+    <Node UniqueName="[0-1066]learnwebTDD" Expanded="true" />
+    <Node UniqueName="[0-1067]learnwebTDD.Tests" Expanded="true" />
+    <Node UniqueName="[0-1068]learnwebTDD.Tests.Controllers" Expanded="true" />
+    <Node UniqueName="[0-1000]learnwebTDD.Tests.Controllers.BrowseControllerTest" Expanded="true" />
+    <Node UniqueName="[0-1069]learnwebTDD.Tests.Data" Expanded="true" />
+    <Node UniqueName="[0-1070]learnwebTDD.Tests.Models" Expanded="true" />
+    <Node UniqueName="[0-1071]learnwebTDD.Tests.Router" Expanded="true" />
+    <Node UniqueName="[0-1057]learnwebTDD.Tests.Router.learnrout" Expanded="true" />
+  </Nodes>
+</VisualState>

@@ -1,0 +1,112 @@
+﻿@using DataRepository;
+@using learnwebTDD.Core.Plugging;
+@using Netko.Common.Util.Seo;
+@model learnwebTDD.Core.Models.ProblemIndex
+           
+ @{
+    ViewBag.Title = Model._pagetitle+"-"+Model._subpagetitle;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+     <div class="container-fluid">
+  <div class="row-fluid">
+            <div class="span10">
+                
+                <div>
+                    <h2>@Html.Raw( Model.questionNow.title)</h2>
+                          <ul class="breadcrumb">
+  <li>
+  <a id="urladd" style="float:right" class="btn btn-lg btn-primary btn-shadow bs3-link" href=""  target="_blank" role="button">View the original question page</a>
+  </li>
+  <li>
+       @{
+          string urlfanyi = HttpUtility.UrlEncode(this.Request.Url.ToString(), System.Text.Encoding.UTF8);
+      }
+            <a  style="float:right" class="btn btn-lg btn-primary btn-shadow bs3-link" href="http://translate.google.com.hk/translate?hl=zh-CN&sl=en&tl=fr&u=@urlfanyi" target="_blank" role="button">Translate this page with Google</a>
+  
+  </li>
+</ul>
+                </div>
+                  <ul class="unstyled">
+               <li class="row-fluid" style="word-break:break-all">
+                   <div class="span1" style=" float:left" >
+                     <img  src="@Model.founder.img" alt="@Model.founder.username"/>  
+                       <br />
+                       @Model.founder.username
+                       </div>
+                         <div class="span11">
+                             @Html.Raw( Model.questionNow.content)
+                             </div>
+               </li>
+                            <li class="row-fluid" style="word-break:break-all">
+                   <div class="span1" style=" float:left" >
+                       
+                       </div>
+                         <div class="span11">
+                           <h3>  @Model.answerAndUserNow.Count Answers</h3>
+                             </div>
+               </li>
+                      @foreach(var item in Model.answerAndUserNow){
+                           <li class="row-fluid" style="word-break:break-all">
+                   <div class="span1" style=" float:left" >
+                       <img  src="@item.userinfo.img" alt="@item.userinfo.username"/><br />
+                       @item.userinfo.username
+                       </div>
+                         <div class="span11">
+                       @Html.Raw( item.answer.content)
+                             </div>
+               </li>
+                      }
+               </ul>
+
+
+                </div>
+         
+
+          <div class="span2">
+              Web site is in building
+              <ul class="unstyled">
+
+                    <li>
+   <a href="/browse/info/@Model.questionNow.titlecode/@SeoFriendlyStringSanitizer.Sanitize(Model.questionNow.tags)">tagged Related </a>
+  </li>
+    @foreach(var item in Model.questionNow.tags.Split(',')){
+  <li>
+    <a href="/home/tag/@this.Server.UrlEncode(item)/"><span class="label label-info">@item</span></a>
+  </li>
+    }
+                
+</ul>
+                </div>
+
+      </div>
+         </div>
+
+
+@section js{
+
+<script type="text/javascript">
+    function geturl(id) {
+        $("#urladd").text("loading...");
+        $.get("/browse/UrlInfo/" + id + "/ajax", function (data) {
+            if (data == "") {
+                
+                $("#urladd").text("Get the url address error");
+                $("#urladd").attr("href", data);
+            }
+            else {
+       
+                $("#urladd").text("View the original question page");
+                $("#urladd").attr("href", data);
+            }
+        });
+    }
+
+    $(document).ready(function () {
+        geturl(@Model.questionNow.titlecode)
+    });
+
+
+</script>
+    }

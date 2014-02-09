@@ -1,0 +1,41 @@
+﻿
+@using learnDAL;
+@using DAL;
+@using learnweb.PageHelper;
+@using Netko.Common.Util.Seo;
+@model learnweb.Models.userinfopage
+
+@{
+    ViewBag.Title = Model._pagetitle + "-" + Model._subpagetitle;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form class="well form-search">
+  <input type="text" class="input-xlarge search-query"  placeholder="Type something…">
+  <button type="submit" class="btn">Search</button>
+</form>
+Web site is in building
+      <hr>
+
+      <!-- Example row of columns -->
+     <div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span10">
+    <h1>@Model.user.username </h1>
+    <img src="@Model.user.img" />
+    <p>In these areas, he is very good at identify problems or resolve problems</p>
+    @foreach (var item in Model.tags)
+    {
+    <div class="span3"><h2><a href="/home/tag/@this.Server.UrlEncode(item)/">@item</a></h2> </div>
+    }
+ 
+
+    </div>
+    <div class="span2">
+      <!--Body content-->
+     sss
+
+
+    </div>
+  </div>
+</div>

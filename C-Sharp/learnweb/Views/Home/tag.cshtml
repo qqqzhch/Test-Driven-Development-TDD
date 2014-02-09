@@ -1,0 +1,69 @@
+﻿
+
+@using learnDAL;
+@using DAL;
+@using learnweb.PageHelper;
+@using Netko.Common.Util.Seo;
+@model learnweb.Models.questiontags
+@{
+    ViewBag.Title = Model._pagetitle+"-"+Model._subpagetitle;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form class="well form-search">
+  <input type="text" class="input-xlarge search-query"  placeholder="Type something…">
+  <button type="submit" class="btn">Search</button>
+</form>
+Web site is in building
+<h1>problem  about @Model.tagname </h1>
+      <hr>
+
+       <div class="container-fluid">
+  <div class="row-fluid">
+     <div class="span10">
+     <ul class="unstyled">
+     @foreach (var tagitem in Model.questionpage.Items)
+     {
+
+         var item = learnDAL.question.getquestionbyid(tagitem.titlecode.Value);
+         if (item != null)
+         {
+             <li class="row-fluid">
+          <div class="span1" style="word-break:break-all">
+                @{
+             var users = learnDAL.userinfo.getuserinfobyid(item.siteid, item.userid);
+             if (users != null)
+             {
+                 <br />
+             <img src="@users.img" /><br />
+              <a>@users.username</a>
+             }
+         }
+          </div>
+          <div class="span11" >
+     <h4><a href="/Problem/index/@item.titlecode/@SeoFriendlyStringSanitizer.Sanitize(item.title)/">@Html.Raw(item.title) </a> </h4> 
+      <br /> 
+
+         @Html.Partial("_smalltag", item.tags)
+
+     <br /> 
+   @item.content
+    @*  @Html.Raw( item.content.Substring(0, item.content.Length / 4));*@
+     
+   
+      </div>
+      </li>
+         }
+
+     }
+     </ul>
+           <div class="span12">
+      @Html.Pager("page1", (int)Model.questionpage.CurrentPage, (int)Model.questionpage.TotalItems, Model.pageurl, pageSize: (int)Model.questionpage.ItemsPerPage)
+      </div>
+     </div>
+     <div class="span2">
+      @* @Html.Partial("userlist",Model.userinfos)*@
+      @Html.Partial("_taglist",Model.tags)
+     </div>
+  </div>
+  </div>

@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="E:\work\learnweb.root\learnweb\learnwebTDD.Tests\bin\Debug\learnwebTDD.Tests.dll" total="47" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2014-01-05" time="12:21:14">
+  <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.5472" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.6.3\bin" machine-name="QQLOVING-PC" user="qqloving" user-domain="qqloving-PC" />
+  <culture-info current-culture="zh-CN" current-uiculture="zh-CN" />
+  <test-suite type="Assembly" name="E:\work\learnweb.root\learnweb\learnwebTDD.Tests\bin\Debug\learnwebTDD.Tests.dll" executed="True" result="Success" success="True" time="11.215" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="learnwebTDD" executed="True" result="Success" success="True" time="11.214" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="Tests" executed="True" result="Success" success="True" time="11.214" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="Controllers" executed="True" result="Success" success="True" time="4.570" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="BrowseControllerTest" executed="True" result="Success" success="True" time="0.059" asserts="0">
+                    <results>
+                      <test-case name="learnwebTDD.Tests.Controllers.BrowseControllerTest.indextest" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                      <test-case name="learnwebTDD.Tests.Controllers.BrowseControllerTest.Info_test" executed="True" result="Success" success="True" time="0.053" asserts="256" />
+                      <test-case name="learnwebTDD.Tests.Controllers.BrowseControllerTest.urlinfo_test" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="HomeControllerTest" executed="True" result="Success" success="True" time="4.241" asserts="0">
+                    <results>
+                      <test-case name="learnwebTDD.Tests.Controllers.HomeControllerTest.Index" executed="True" result="Success" success="True" time="1.215" asserts="5" />
+                      <test-case name="learnwebTDD.Tests.Controllers.HomeControllerTest.Indexpage" executed="True" result="Success" success="True" time="0.023" asserts="5" />
+                      <test-case name="learnwebTDD.Tests.Controllers.HomeControllerTest.tagindex" executed="True" result="Success" success="True" time="1.627" asserts="339" />
+                      <test-case name="learnwebTDD.Tests.Controllers.HomeControllerTest.tagindexPage" executed="True" result="Success" success="True" time="1.368" asserts="339" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="ProblemControllerTest" executed="True" result="Success" success="True" time="0.244" asserts="0">
+                    <results>
+                      <test-case name="learnwebTDD.Tests.Controllers.ProblemControllerTest.shoud_test_Problem_index" executed="True" result="Success" success="True" time="0.242" asserts="9" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="TagControllerTest" executed="True" result="Success" success="True" time="0.017" asserts="0">
+                    <results>
+                      <test-case name="learnwebTDD.Tests.Controllers.TagControllerTest.check_tag_index_nopae" executed="True" result="Success" success="True" time="0.007" asserts="95" />
+                      <test-case name="learnwebTDD.Tests.Controllers.TagControllerTest.check_tag_index_pae" executed="True" result="Success" success="True" time="0.006" asserts="95" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite type="Namespace" name="Data" executed="True" result="Success" success="True" time="1.029" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="IanswerTest" executed="True" result="Success" success="True" time="0.137" asserts="0">
+                    <results>
+                      <test-case name="learnwebTDD.Tests.Data.IanswerTest.Test_GetanswerListByQcode" executed="True" result="Success" success="True" time="0.136" asserts="6" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="IquestiontagTest" executed="True" result="Success" success="True" time="0.007" asserts="0">
+                    <results>
+                      <test-case name="learnwebTDD.Tests.Data.IquestiontagTest.shoud_Get_questiontagBypage" executed="True" result="Success" success="True" time="0.006" asserts="33" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="IquestionTest" executed="True" result="Success" success="True" time="0.609" asserts="0">
+                    <results>
+                      <test-case name="learnwebTDD.Tests.Data.IquestionTest.SHOULD_GET_question_FULL" executed="True" result="Success" success="True" time="0.045" asserts="4" />
+                      <test-case name="learnwebTDD.Tests.Data.IquestionTest.SHOULD_GET_question_PAGE" executed="True" result="Success" success="True" time="0.539" asserts="33" />
+                      <test-case name="learnwebTDD.Tests.Data.IquestionTest.SHOULD_GET_question_SMALL" executed="True" result="Success" success="True" time="0.016" asserts="4" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="IsiteTest" executed="True" result="Success" success="True" time="0.091" asserts="0">
+                    <results>
+                      <test-case name="learnwebTDD.Tests.Data.IsiteTest.shoud_get_site" executed="True" result="Success" success="True" time="0.090" asserts="2" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="ItagTest" executed="True" result="Success" success="True" time="0.037" asserts="0">
+                    <results>
+                      <test-case name="learnwebTDD.Tests.Data.ItagTest.shoe_get_tag_bapage" executed="True" result="Success" success="True" time="0.005" asserts="3" />
+                      <test-case name="learnwebTDD.Tests.Data.ItagTest.shoud_get_tag_byID" executed="True" result="Success" success="True" time="0.025" asserts="1" />
+                      <test-case name="learnwebTDD.Tests.Data.ItagTest.shoud_get_tag_byname" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="IurlinfoTest" executed="True" result="Success" success="True" time="0.103" asserts="0">
+                    <results>
+                      <test-case name="learnwebTDD.Tests.Data.IurlinfoTest.shoud_get_url_BYid" executed="True" result="Success" success="True" time="0.102" asserts="2" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="IuserinfoTest" executed="True" result="Success" success="True" time="0.026" asserts="0">
+                    <results>
+                      <test-case name="learnwebTDD.Tests.Data.IuserinfoTest.shoud_get_full" executed="True" result="Success" success="True" time="0.021" asserts="3" />
+                      <test-case name="learnwebTDD.Tests.Data.IuserinfoTest.shoud_get_small" executed="True" result="Success" success="True" time="0.001" asserts="3" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite type="Namespace" name="Models" executed="True" result="Success" success="True" time="4.992" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="browseInfoModel" executed="True" result="Success" success="True" time="3.869" asserts="0">
+                    <results>
+                      <test-case name="learnwebTDD.Tests.Models.browseInfoModel.check_CompositeList_for_question" executed="True" result="Success" success="True" time="3.834" asserts="294" />
+                      <test-case name="learnwebTDD.Tests.Models.browseInfoModel.shoud_get_question_by_id" executed="True" result="Success" success="True" time="0.002" asserts="6" />
+                      <test-case name="learnwebTDD.Tests.Models.browseInfoModel.shoud_get_questionTag" executed="True" result="Success" success="True" time="0.019" asserts="2" />
+                      <test-case name="learnwebTDD.Tests.Models.browseInfoModel.shoud_get_tag_list" executed="True" result="Success" success="True" time="0.004" asserts="3" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="homeindexModel" executed="True" result="Success" success="True" time="0.495" asserts="0">
+                    <results>
+                      <test-case name="learnwebTDD.Tests.Models.homeindexModel.shoud_get_Homequestion" executed="True" result="Success" success="True" time="0.007" asserts="33" />
+                      <test-case name="learnwebTDD.Tests.Models.homeindexModel.shoud_set_CompositeList_for_question" executed="True" result="Success" success="True" time="0.007" asserts="32" />
+                      <test-case name="learnwebTDD.Tests.Models.homeindexModel.shoud_set_CompositeList_for_user" executed="True" result="Success" success="True" time="0.473" asserts="61" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="homeTagModel" executed="True" result="Success" success="True" time="0.105" asserts="0">
+                    <results>
+                      <test-case name="learnwebTDD.Tests.Models.homeTagModel.shoud_get_pageBytagid" executed="True" result="Success" success="True" time="0.006" asserts="6" />
+                      <test-case name="learnwebTDD.Tests.Models.homeTagModel.shoud_get_tagByname" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                      <test-case name="learnwebTDD.Tests.Models.homeTagModel.shoud_get_tags" executed="True" result="Success" success="True" time="0.005" asserts="2" />
+                      <test-case name="learnwebTDD.Tests.Models.homeTagModel.shoud_getpage_with_question" executed="True" result="Success" success="True" time="0.019" asserts="4" />
+                      <test-case name="learnwebTDD.Tests.Models.homeTagModel.shoud_getpage_with_user" executed="True" result="Success" success="True" time="0.030" asserts="5" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="ProblemIndexModel" executed="True" result="Success" success="True" time="0.352" asserts="0">
+                    <results>
+                      <test-case name="learnwebTDD.Tests.Models.ProblemIndexModel.shou_get_answerlist" executed="True" result="Success" success="True" time="0.135" asserts="2" />
+                      <test-case name="learnwebTDD.Tests.Models.ProblemIndexModel.shou_get_aQuestion" executed="True" result="Success" success="True" time="0.015" asserts="3" />
+                      <test-case name="learnwebTDD.Tests.Models.ProblemIndexModel.shou_have_user_for_answerlist" executed="True" result="Success" success="True" time="0.180" asserts="25" />
+                      <test-case name="learnwebTDD.Tests.Models.ProblemIndexModel.shou_set_user_forQuestion" executed="True" result="Success" success="True" time="0.011" asserts="2" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="TagindexModel" executed="True" result="Success" success="True" time="0.006" asserts="0">
+                    <results>
+                      <test-case name="learnwebTDD.Tests.Models.TagindexModel.shoud_get_Tag_Page" executed="True" result="Success" success="True" time="0.005" asserts="2" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="UrlInfoModel" executed="True" result="Success" success="True" time="0.149" asserts="0">
+                    <results>
+                      <test-case name="learnwebTDD.Tests.Models.UrlInfoModel.shoud_get_url" executed="True" result="Success" success="True" time="0.147" asserts="2" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite type="Namespace" name="Router" executed="True" result="Success" success="True" time="0.608" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="learnrout" executed="True" result="Success" success="True" time="0.608" asserts="0">
+                    <results>
+                      <test-case name="learnwebTDD.Tests.Router.learnrout.shou_browse_index" executed="True" result="Success" success="True" time="0.498" asserts="0" />
+                      <test-case name="learnwebTDD.Tests.Router.learnrout.shou_browse_info" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                      <test-case name="learnwebTDD.Tests.Router.learnrout.shou_browse_UrlInfo" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                      <test-case name="learnwebTDD.Tests.Router.learnrout.shou_home_tag" executed="True" result="Success" success="True" time="0.004" asserts="0" />
+                      <test-case name="learnwebTDD.Tests.Router.learnrout.shou_Problem_index" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                      <test-case name="learnwebTDD.Tests.Router.learnrout.shou_tag_index" executed="True" result="Success" success="True" time="0.004" asserts="0" />
+                      <test-case name="learnwebTDD.Tests.Router.learnrout.shoud_Home_index" executed="True" result="Success" success="True" time="0.004" asserts="0" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

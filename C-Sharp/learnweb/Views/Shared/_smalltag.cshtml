@@ -1,0 +1,13 @@
+﻿  @using learnweb.Models;
+  @model  string
+              
+                 
+      @{
+          string[] objlist =Model.Split(',');
+          foreach (var tag in objlist)
+          {
+              <a href="@commseting.sitebaseurl/home/tag/@this.Server.UrlEncode(tag)/">
+      <span class="label label-info">@tag</span>     
+      </a>
+          }
+          }
